@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.logo {
+    margin-top: 10px;
+}
+.hero {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    padding-left: 30px;
+}
+.heading {
+    margin-left: 40px;
+    width: 90%;
+    display: flex;
+    gap: 45px;
+}
+.heading p {
+    color: antiquewhite;
+    font-size: larger;
+    font-weight: bolder; 
+}
+#story p {
+    color: antiquewhite;
+    font-size: larger;
+    font-weight: bolder;
+}
+.language {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.language button {
+    width: 50px;
+    border-radius: 20px;
+}
+.main {
+    color: antiquewhite;
+    margin-top: 130px;
+    margin-left: 120px;
+    font-size: xx-large;
+}
+#story {
+    font-size: small;
+    font-weight: bold;
+}
+#explore {
+    font-size: medium;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: rgb(227, 149, 5);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.value {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 70px;
+    width: 90%;
+}
+.bitcoin, .enthereum, .dogcoin {
+    height: 70px;
+    width: 150px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex: 1;
+}
+.enthereum, .dogcoin {
+    margin-left: 20px;
+}
+.bitcoin p, .enthereum p, .dogcoin p {
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+}
+.bitcoin h4, .enthereum h4, .dogcoin h4 {
+    color: rgba(228, 157, 25, 0.694);
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading, .value {
+        flex-direction: column;
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .language {
+        right: 5%;
+    }
+    .main {
+        margin-left: 20px;
+        font-size: x-large;
+    }
+    .bitcoin, .enthereum, .dogcoin {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero, .heading {
+        flex-direction: column;
+    }
+    .main {
+        font-size: large;
+        margin-top: 20px;
+    }
+    .language button {
+        width: 40px; /* Smaller buttons on smaller screens */
+    }
+    #explore {
+        width: 80px;
+        height: 35px;
+    }
+}
